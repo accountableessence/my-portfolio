@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hrithika E B — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Pixelify+Sans:wght@400;700&family=Share+Tech+Mono&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor-bow" class="cursor-light">
+    <svg viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="12" cy="15" rx="11" ry="7" fill="#f4a7c0" stroke="#e87fa8" stroke-width="1.2"/>
+      <ellipse cx="28" cy="15" rx="11" ry="7" fill="#f4a7c0" stroke="#e87fa8" stroke-width="1.2"/>
+      <circle cx="20" cy="15" r="4" fill="#e87fa8"/>
+      <circle cx="20" cy="15" r="2" fill="#fff0f5"/>
+    </svg>
+  </div>
+  <div id="cursor-mouse" class="cursor-dark">
+    <svg viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="26" height="38" rx="13" fill="#0a0a0f" stroke="#7c4dff" stroke-width="1.5"/>
+      <line x1="14" y1="1" x2="14" y2="18" stroke="#7c4dff" stroke-width="1.5"/>
+      <ellipse cx="14" cy="24" rx="3" ry="5" fill="#7c4dff" opacity=".6"/>
+    </svg>
+  </div>
+
+  <!-- GLOBAL FLOATING BG — light only, spans full page -->
+  <div class="global-bg-deco light-deco" aria-hidden="true">
+    <span class="gbd" style="top:8%;left:3%;font-size:2rem;animation-duration:5s;">🎀</span>
+    <span class="gbd" style="top:15%;right:6%;font-size:1.4rem;animation-duration:7s;animation-delay:-2s;">🍒</span>
+    <span class="gbd" style="top:28%;left:1%;font-size:1.6rem;animation-duration:6s;animation-delay:-1s;">🌸</span>
+    <span class="gbd" style="top:35%;right:2%;font-size:2.2rem;animation-duration:4.5s;animation-delay:-3s;">🌿</span>
+    <span class="gbd" style="top:50%;left:2%;font-size:1.2rem;animation-duration:8s;animation-delay:-4s;">✿</span>
+    <span class="gbd" style="top:55%;right:3%;font-size:1.8rem;animation-duration:5.5s;animation-delay:-1.5s;">🎀</span>
+    <span class="gbd" style="top:68%;left:1%;font-size:1.5rem;animation-duration:6.5s;animation-delay:-2.5s;">🌷</span>
+    <span class="gbd" style="top:72%;right:4%;font-size:1.3rem;animation-duration:4s;animation-delay:-3.5s;">🍒</span>
+    <span class="gbd" style="top:82%;left:3%;font-size:2rem;animation-duration:7s;animation-delay:-1s;">🌸</span>
+    <span class="gbd" style="top:88%;right:2%;font-size:1.6rem;animation-duration:5s;animation-delay:-2s;">✦</span>
+    <div class="ribbon-global rg1"></div>
+    <div class="ribbon-global rg2"></div>
+    <div class="ribbon-global rg3"></div>
+    <div class="heart-scatter hs1">♡</div>
+    <div class="heart-scatter hs2">♡</div>
+    <div class="heart-scatter hs3">♡</div>
+    <div class="heart-scatter hs4">♡</div>
+    <div class="leaf-scatter ls1">🍃</div>
+    <div class="leaf-scatter ls2">🌿</div>
+    <div class="leaf-scatter ls3">🍃</div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <span class="logo-light">hrithika ✿</span>
+      <span class="logo-dark">HRITHIKA_EB</span>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <div class="toggle-track">
+          <span class="toggle-icon">🌸</span>
+          <div class="toggle-thumb"></div>
+          <span class="toggle-icon">🌙</span>
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+
+    <!-- DARK BG DECORATIONS -->
+    <div class="bg-deco dark-deco">
+      <div class="glitch-text gt1">404</div>
+      <div class="glitch-text gt2">ERROR</div>
+      <div class="glitch-text gt3">!</div>
+      <div class="glitch-text gt4">&lt;/&gt;</div>
+      <div class="glitch-text gt5">01010</div>
+      <div class="neon-orb no1"></div>
+      <div class="neon-orb no2"></div>
+      <div class="neon-orb no3"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-photo-col">
+        <div class="hero-photo-wrap">
+          <div class="photo-border-glow"></div>
+          <div class="hero-img-box">
+            <img src="photo-light.jpg" alt="Hrithika" class="hero-img light-el" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <img src="photo-dark.jpg" alt="Hrithika" class="hero-img dark-el dark-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="photo-placeholder">✿</div>
+          </div>
+          <div class="hero-name-overlay">
+            <span class="overlay-name-light">Hrithika E B</span>
+            <span class="overlay-name-dark">HRITHIKA_EB/</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text-col">
+        <div class="hero-tag light-el">sprinkled with stardust ✿ codes & creates ✿ dances too</div>
+        <div class="hero-tag dark-el">[FRONTEND_DEV // CREATIVE // DESIGNER]</div>
+
+        <h1 class="hero-headline">
+          <span class="hl-light">Making<br><em>beautiful</em> things<br>behave <em>beautifully.</em></span>
+          <span class="hl-dark">A DESIGNER<br>WHO JUDGES A BOOK BY ITS COVER.</span>
+        </h1>
+
+        <p class="hero-catchphrase">
+          <span class="cp-light">✦ 'cause a good code deserves a good design ✦</span>
+          <span class="cp-dark">// 'cause_if_the_cover_can't_impress_you_then_what_else_can_?</span>
+        </p>
+
+        <p class="hero-sub light-el">a frontend dev who paints, dances bharatanatyam & writes poetry — because why be one thing when you can be everything? ✿</p>
+        <p class="hero-sub dark-el">B.Tech CSE · 7th Sem · Thrissur, KL<br>Frontend Developer · UI/UX Designer</p>
+
+        <div class="hero-cta">
+          <a href="#work" class="btn-primary">
+            <span class="light-el">see my magic ✿</span>
+            <span class="dark-el">VIEW_WORK →</span>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span class="light-el">say hello 🌸</span>
+            <span class="dark-el">CONTACT →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MASCOT -->
+    <div class="mascot" id="mascot">
+      <div class="mascot-cat light-el">
+        <div class="cat-wrap">
+          <div class="cat-speech light-el">pssstt... hire her! ✿</div>
+          <div class="pixel-cat" id="pixelCat">
+            <div class="cat-ear left-ear"></div>
+            <div class="cat-ear right-ear"></div>
+            <div class="cat-head">
+              <div class="cat-eye left-eye"></div>
+              <div class="cat-eye right-eye"></div>
+              <div class="cat-nose"></div>
+              <div class="cat-mouth"></div>
+            </div>
+            <div class="cat-body">
+              <div class="cat-bow"></div>
+            </div>
+            <div class="cat-tail"></div>
+          </div>
+          <div class="cat-zap" id="catZap">✨</div>
+        </div>
+      </div>
+      <div class="mascot-ghost dark-el">
+        <div class="ghost-wrap">
+          <div class="ghost-speech dark-el">boo! hire her! 👻</div>
+          <div class="pixel-ghost" id="pixelGhost">
+            <div class="ghost-body">
+              <div class="ghost-eye left-eye"></div>
+              <div class="ghost-eye right-eye"></div>
+              <div class="ghost-mouth"></div>
+              <div class="ghost-bottom">
+                <div class="ghost-bump"></div>
+                <div class="ghost-bump"></div>
+                <div class="ghost-bump"></div>
+              </div>
+            </div>
+            <div class="ghost-glow"></div>
+          </div>
+          <div class="ghost-sparks" id="ghostSparks">
+            <span>⚡</span><span>!</span><span>*</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="mtrack"></div>
+  </div>
+
+  <!-- ══ WORK ══ -->
+  <section id="work">
+    <div class="section-eyebrow">
+      <span class="eyebrow-light">✿ things i made with love & caffeine</span>
+      <span class="eyebrow-dark">[01] SELECTED_WORK</span>
+    </div>
+    <h2 class="section-title reveal">
+      <span class="st-light">stuff i built<br><em>& obsessed over.</em></span>
+      <span class="st-dark">THINGS<br>I BUILT.</span>
+    </h2>
+
+    <div class="projects-grid">
+    <div class="proj-feature reveal d1">
+        <div class="proj-feature-media">
+          <div class="proj-feature-frame">
+            <img src="deha-screenshot.jpg" alt="Deha app screenshot" class="proj-feature-img" onerror="this.style.display='none'"/>
+            <div class="proj-feature-placeholder">✿</div>
+          </div>
+        </div>
+        <div class="proj-feature-content">
+          <div class="proj-feature-eyebrow">
+            <span class="light-el">✿ project one</span>
+            <span class="dark-el">[01] FEATURED_WORK</span>
+          </div>
+          <h3 class="proj-title">
+            <span class="light-el">Deha - Real-Time Yoga Pose Correction</span>
+            <span class="dark-el">Deha - Real-Time Yoga Pose Correction</span>
+          </h3>
+          <div class="proj-desc-panel">
+            <p class="proj-desc light-el">something i built that i'm actually, deeply proud of — Deha watches you move through a yoga pose in real time and gently (but firmly, don't test her) tells you when your alignment's off. built the whole thing with Python, OpenCV, and MediaPipe doing live pose estimation, wired up to Firebase for auth, session history, and profile persistence, so it remembers your practice, not just your posture. presented it at ProXpo 2026, and spent way too many hours chasing flickering skeleton overlays and mirror-flip bugs until it finally moved the way i wanted it to ✿</p>
+            <p class="proj-desc dark-el">> PROCESS: deha.exe — real-time posture correction via pose estimation<br>
+            > STACK: python / opencv / mediapipe / firebase<br>
+            > pipeline reads live video feed, maps joint landmarks, flags misalignment in real time<br>
+            > auth + session history + profile persistence via firestore, state survives across sessions<br>
+            > showcased @ ProXpo 2026<br>
+            > status: stable. still watching your form.</p>
+          </div>
+          <div class="proj-tags">
+            <span class="ptag">Python</span><span class="ptag">OpenCV</span><span class="ptag">MediaPipe</span><span class="ptag">Firebase</span>
+          </div>
+          <a href="https://github.com/accountableessence/deha-yoga-visualizer" target="_blank" class="proj-link">
+            <span class="light-el">peek at the code ✿</span>
+            <span class="dark-el">VIEW_PROJECT →</span>
+          </a>
+        </div>
+    </div>
+
+    <div class="proj-feature flip reveal d2">
+        <div class="proj-feature-media">
+          <div class="proj-feature-frame">
+            <img src="tracker-screenshot.jpg" alt="Smart Shopping List & Expense Tracker screenshot" class="proj-feature-img" onerror="this.style.display='none'"/>
+            <div class="proj-feature-placeholder">✿</div>
+          </div>
+        </div>
+        <div class="proj-feature-content">
+          <div class="proj-feature-eyebrow">
+            <span class="light-el">✿ project two</span>
+            <span class="dark-el">[02] FEATURED_WORK</span>
+          </div>
+          <h3 class="proj-title">
+            <span class="light-el">Smart Shopping List & Expense Tracker</span>
+            <span class="dark-el">Smart Shopping List & Expense Tracker</span>
+          </h3>
+          <div class="proj-desc-panel">
+            <p class="proj-desc light-el">another one i made because my wishlist dreams and my actual bank balance were not on speaking terms — a shopping list + expense tracker that lets you log what you want, what you bought, and where the money actually went, broken down by category and by trip. built with Flask on the backend, SQLite holding it all together, and Chart.js drawing the spending trends so the damage is at least pretty to look at ✿</p>
+            <p class="proj-desc dark-el">> PROCESS: expense_tracker.py<br>
+            > STACK: flask / sqlite / chart.js / html+css+js<br>
+            > features: category tracking, wishlist-to-purchase flow, trip-level expense breakdown, spending trend charts<br>
+            > status: stable. still watching your spending habits.</p>
+          </div>
+          <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">SQLite</span></div>
+          <a href="https://github.com/accountableessence/smart-expense-manager" target="_blank" class="proj-link">
+            <span class="light-el">peek at the code ✿</span>
+            <span class="dark-el">VIEW_PROJECT →</span>
+          </a>
+        </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="about-wrap">
+      <div class="about-left reveal">
+        <div class="section-eyebrow">
+          <span class="eyebrow-light">✿ the person behind the pixels</span>
+          <span class="eyebrow-dark">[02] ABOUT</span>
+        </div>
+        <h2 class="section-title">
+          <span class="st-light">an artist<br>at heart.<br><em>a developer</em><br>by craft.</span>
+          <span class="st-dark">DESIGNER<br>AT HEART.<br>DEV BY<br>CRAFT.</span>
+        </h2>
+        <p class="about-catchphrase">
+          <span class="light-el">✦ turning "it works!" into "i love this." ✦</span>
+          <span class="dark-el">// building things that people want to click</span>
+        </p>
+      </div>
+      <div class="about-right reveal d1">
+        <p class="about-body light-el">hi! i'm hrithika — a B.Tech CSE student (final-year, almost there ✿) who is absolutely, unabashedly obsessed with building interfaces that feel as magical as they look. frontend development is my craft but i bring a whole world to it.</p>
+        <p class="about-body light-el">oh and if you're the trophy-counting type — took home 2nd prize at Designathon (a 2-hour dept fest sprint) and 1st prize for UI/UX design at AURA 4.0, WIE IEEE SCT SB ✿</p>
+        <p class="about-body light-el">trained bharatanatyam dancer at <strong>Aharya School of Dance</strong> ✿ published poet with <strong>The Writer's Pocket</strong> ✿ acrylic painter ✿ pencil sketch artist ✿ custom wallpaper maker — because why be one thing?</p>
+        <p class="about-body dark-el">> USER: hrithika_eb // final-year CSE student based in Thrissur, Kerala.</p>
+        <p class="about-body dark-el">> ROLE: frontend developer & UI/UX designer. i care about interfaces as much as i care about clean, working code — pixel-perfect layouts, smooth interactions, no compromises.</p>
+        <p class="about-body dark-el">> AWARDS: 2nd place — designathon (2hr sprint, dept fest) | 1st place — UI/UX design, AURA 4.0 (WIE IEEE SCT SB)</p>
+        <p class="about-body dark-el">> CURRENTLY: leveling up in React and building small AI-powered projects on the side — always building, always learning.</p>
+        
+        <div class="skills-wrap">
+          <div class="skill-group-new">
+            <span class="sgn-label light-el">✿ frontend magic</span>
+            <span class="sgn-label dark-el">[FRONTEND]</span>
+            <div class="sgn-icons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript"/>
+            </div>
+          </div>
+          <div class="skill-group-new">
+            <span class="sgn-label light-el">✿ tools i adore</span>
+            <span class="sgn-label dark-el">[TOOLS]</span>
+            <div class="sgn-icons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="Figma"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySQL"/>
+            </div>
+          </div>
+          <div class="skill-group-new">
+            <span class="sgn-label light-el">✿ platforms i deploy on</span>
+            <span class="sgn-label dark-el">[PLATFORMS]</span>
+            <div class="sgn-icons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" title="Firebase"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" title="Vercel"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" title="Supabase"/>
+            </div>
+          </div>
+          <div class="skill-group-new">
+            <span class="sgn-label light-el">✿ computer vision</span>
+            <span class="sgn-label dark-el">[COMPUTER_VISION]</span>
+            <div class="sgn-icons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" title="OpenCV"/>
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mediapipe.svg" title="MediaPipe"/>
+            </div>
+          </div>
+          <div class="skill-group-new">
+            <span class="sgn-label light-el">✿ languages i speak</span>
+            <span class="sgn-label dark-el">[LANGUAGES]</span>
+            <div class="sgn-icons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" title="C++"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" title="C"/>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/accountableessence" target="_blank" class="btn-primary" style="margin-top:1.5rem;display:inline-flex;">
+          <span class="light-el">stalk my github ✿</span>
+          <span class="dark-el">GITHUB →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+
+    <!-- GLOBAL FLOATING BG — light only, spans full page -->
+    <div class="global-bg-deco light-deco" aria-hidden="true">
+      <span class="gbd" style="top:8%;left:3%;font-size:2rem;animation-duration:5s;">🎀</span>
+      <span class="gbd" style="top:15%;right:6%;font-size:1.4rem;animation-duration:7s;animation-delay:-2s;">🍒</span>
+      <span class="gbd" style="top:28%;left:1%;font-size:1.6rem;animation-duration:6s;animation-delay:-1s;">🌸</span>
+      <span class="gbd" style="top:35%;right:2%;font-size:2.2rem;animation-duration:4.5s;animation-delay:-3s;">🌿</span>
+      <span class="gbd" style="top:50%;left:2%;font-size:1.2rem;animation-duration:8s;animation-delay:-4s;">✿</span>
+      <span class="gbd" style="top:55%;right:3%;font-size:1.8rem;animation-duration:5.5s;animation-delay:-1.5s;">🎀</span>
+      <span class="gbd" style="top:68%;left:1%;font-size:1.5rem;animation-duration:6.5s;animation-delay:-2.5s;">🌷</span>
+      <span class="gbd" style="top:72%;right:4%;font-size:1.3rem;animation-duration:4s;animation-delay:-3.5s;">🍒</span>
+      <span class="gbd" style="top:82%;left:3%;font-size:2rem;animation-duration:7s;animation-delay:-1s;">🌸</span>
+      <span class="gbd" style="top:88%;right:2%;font-size:1.6rem;animation-duration:5s;animation-delay:-2s;">✦</span>
+      <div class="ribbon-global rg1"></div>
+      <div class="ribbon-global rg2"></div>
+      <div class="ribbon-global rg3"></div>
+      <div class="heart-scatter hs1">♡</div>
+      <div class="heart-scatter hs2">♡</div>
+      <div class="heart-scatter hs3">♡</div>
+      <div class="heart-scatter hs4">♡</div>
+      <div class="leaf-scatter ls1">🍃</div>
+      <div class="leaf-scatter ls2">🌿</div>
+      <div class="leaf-scatter ls3">🍃</div>
+    </div>
+
+    <!-- DARK BG DECORATIONS -->
+    <div class="bg-deco dark-deco">
+      <div class="glitch-text gt1">404</div>
+      <div class="glitch-text gt2">ERROR</div>
+      <div class="glitch-text gt3">!</div>
+      <div class="glitch-text gt4">&lt;/&gt;</div>
+      <div class="glitch-text gt5">01010</div>
+      <div class="neon-orb no1"></div>
+      <div class="neon-orb no2"></div>
+      <div class="neon-orb no3"></div>
+    </div>
+
+
+    <div class="contact-inner reveal">
+      <div class="section-eyebrow">
+        <span class="eyebrow-light">✿ don't be a stranger</span>
+        <span class="eyebrow-dark">[03] CONTACT</span>
+      </div>
+      <h2 class="contact-title">
+        <span class="st-light">let's build<br><em>something</em><br>wonderful. ✿</span>
+        <span class="st-dark">LET'S<br>BUILD.</span>
+      </h2>
+      <p class="contact-sub light-el">open to frontend internships, collabs, cool projects, and friendly hellos — i promise i don't bite 🌸 <br>based in Thrissur, Kerala.</p>
+      <p class="contact-sub dark-el">Open to frontend internships, collabs, and interesting projects. Thrissur, Kerala.</p>
+      <div class="contact-links">
+        <a href="mailto:hrithikaeb102@gmail.com" class="c-btn">
+          <span class="light-el">✉ mail me</span><span class="dark-el">EMAIL →</span>
+        </a>
+        <a href="https://github.com/accountableessence" target="_blank" class="c-btn">
+          <span class="light-el">GitHub ✿</span><span class="dark-el">GITHUB →</span>
+        </a>
+        <a href="https://www.linkedin.com/in/hrithika-eb/" target="_blank" class="c-btn">
+          <span class="light-el">LinkedIn ✿</span><span class="dark-el">LINKEDIN →</span>
+        </a>
+        <a href="https://www.instagram.com/opthumbistic" target="_blank" class="c-btn">
+          <span class="light-el">Instagram 🌸</span><span class="dark-el">INSTAGRAM →</span>
+        </a>
+      </div>
+      <p class="footer-note">
+        <span class="light-el">designed & built by hrithika ✿ with too much css, too many ribbons, and a lot of love</span>
+        <span class="dark-el">// designed_by: hrithika_eb | stack: HTML+CSS+JS | powered_by: caffeine</span>
+      </p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
